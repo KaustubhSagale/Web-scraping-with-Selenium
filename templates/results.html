@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+         body, html {
+            margin: 0;
+            padding: 0;
+            height: 30%;
+            width: 75%;
+            align-items: center; 
+        }
+        .run-script-btn {
+            padding: 15px 30px; 
+            font-size: 16px; 
+            font-weight: bold; 
+            color: white; 
+            background-color: #4CAF50; 
+            border: none; 
+            border-radius: 5px; 
+            cursor: pointer; 
+            transition: all 0.3s ease; 
+            margin-top: 40px;
+            
+        }
+
+        .run-script-btn:hover {
+            background-color: #45a049; 
+            transform: scale(1.05); 
+        }
+
+        .run-script-btn:active {
+            background-color: #397D3A; 
+            transform: scale(1); 
+        }
+    </style>
+    <title>Results</title>
+</head>
+<body>
+    <p>These are the most happening topics as on {{ record.end_time }}:</p>
+    <ul>
+        <li>{{ record.trend1 }}</li>
+        <li>{{ record.trend2 }}</li>
+        <li>{{ record.trend3 }}</li>
+        <li>{{ record.trend4 }}</li>
+        <li>{{ record.trend5 }}</li>
+    </ul>
+    <p>The IP address used for this query was {{ record.ip_address }}.</p>
+    <p>Here’s a JSON extract of this record from the MongoDB:</p>
+    <pre>{{ record }}</pre>
+    <button class="run-script-btn" onclick="window.location.href='/run_script';">Click here to run the query again.</button>
+</body>
+</html>

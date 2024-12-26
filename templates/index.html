@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+         body, html {
+            margin: 0;
+            padding: 0;
+            height: 45%;
+            display: flex;
+            justify-content: center; 
+            align-items: center; 
+        }
+
+        .run-script-btn {
+            padding: 15px 30px; 
+            font-size: 16px; 
+            font-weight: bold; 
+            color: white; 
+            background-color: #4CAF50; 
+            border: none; 
+            border-radius: 5px; 
+            cursor: pointer; 
+            transition: all 0.3s ease; 
+        }
+
+        .run-script-btn:hover {
+            background-color: #45a049; 
+            transform: scale(1.05); 
+        }
+
+        .run-script-btn:active {
+            background-color: #397D3A; 
+            transform: scale(1); 
+        }
+    </style>
+    <title>Twitter Trends</title>
+</head>
+<body>
+    <button class="run-script-btn" onclick="window.location.href='/run_script';">Click here to run the script.</button>
+</body>
+</html>

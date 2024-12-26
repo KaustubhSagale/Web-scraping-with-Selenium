@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body, html {
+           margin: 0;
+           height: 30%;
+           width: 100%;
+           align-items: center; 
+           justify-content: center; 
+
+       }
+    
+       .run-script-btn {
+           padding: 15px 30px; 
+           font-size: 16px; 
+           font-weight: bold; 
+           color: white; 
+           background-color: #4CAF50;
+           border: none; 
+           border-radius: 5px; 
+           cursor: pointer; 
+           transition: all 0.3s ease; 
+           margin-top: 40px;
+           
+       }
+
+    
+       .run-script-btn:hover {
+           background-color: #45a049; 
+           transform: scale(1.05); 
+       }
+
+       .run-script-btn:active {
+           background-color: #397D3A; 
+           transform: scale(1); 
+       }
+   </style>
+    <title>Error</title>
+</head>
+<body>
+    <p class="run-script-btn">Failed to run Selenium script. Error: {{ error_message }} check your username, password, chromedriver,selenium,etc all dependencies are installed and make sure it is correct </p>
+    <button class="run-script-btn" onclick="window.location.href='/';">Go back</button>
+</body>
+</html>
