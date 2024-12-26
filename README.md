@@ -1,3 +1,3 @@
 For Start:
-python app.py                                                                         
-python selenium_script.py   
+1) python app.py                                                                         
+2) python selenium_script.py   
